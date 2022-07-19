@@ -1,7 +1,11 @@
 import styled from "@emotion/styled";
+// @ts-ignore
 import Zoom from "react-reveal/Zoom";
+// @ts-ignore
 import Slide from "react-reveal/Slide";
+// @ts-ignore
 import Fade from "react-reveal/Fade";
+// @ts-ignore
 import Bounce from "react-reveal/Bounce";
 
 export const Wrapper = styled.div`

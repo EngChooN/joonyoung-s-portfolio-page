@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+// @ts-ignore
 import Fade from "react-reveal/Fade";
 import { useState } from "react";
 
@@ -39,7 +40,7 @@ const SkillsTap1 = styled.section`
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: ${(props) => (props.one ? "white" : "#dddddd")};
+  background-color: ${(props: any) => (props.one ? "white" : "#dddddd")};
   font-size: 19px;
   font-weight: 200;
 `;
@@ -52,7 +53,7 @@ const SkillsTap2 = styled.section`
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: ${(props) => (props.two ? "white" : "#dddddd")};
+  background-color: ${(props: any) => (props.two ? "white" : "#dddddd")};
   font-size: 19px;
   font-weight: 200;
 `;
@@ -65,7 +66,7 @@ const SkillsTap3 = styled.section`
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: ${(props) => (props.three ? "white" : "#dddddd")};
+  background-color: ${(props: any) => (props.three ? "white" : "#dddddd")};
   font-size: 19px;
   font-weight: 200;
 `;
@@ -129,7 +130,7 @@ const Contact_Content = styled.p`
   margin-left: 45px;
 `;
 
-export default function SkillsPage(props) {
+export default function SkillsPage(props: any) {
   const [one, setOne] = useState(true);
   const [two, setTwo] = useState(false);
   const [three, setThree] = useState(false);
@@ -159,12 +160,15 @@ export default function SkillsPage(props) {
       <Fade>
         <Skills>
           <Tap_Wrapper>
+            {/* @ts-ignore */}
             <SkillsTap1 one={one} onClick={onClickTapOne}>
               Proficient
             </SkillsTap1>
+            {/* @ts-ignore */}
             <SkillsTap2 two={two} onClick={onClickTapTwo}>
               Demonstrating
             </SkillsTap2>
+            {/* @ts-ignore */}
             <SkillsTap3 three={three} onClick={onClickTapThree}>
               ETC
             </SkillsTap3>

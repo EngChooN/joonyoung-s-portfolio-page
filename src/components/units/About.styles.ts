@@ -32,7 +32,7 @@ export const Sidebar_Title1 = styled.div`
   :hover {
     background-color: #d9d9d9;
   }
-  background-color: ${(props) => (props.one ? "#e4e4e4" : "none")};
+  background-color: ${(props: any) => (props.one ? "#e4e4e4" : "none")};
 `;
 
 export const Sidebar_Title2 = styled.div`
@@ -46,7 +46,7 @@ export const Sidebar_Title2 = styled.div`
   :hover {
     background-color: #d9d9d9;
   }
-  background-color: ${(props) => (props.two ? "#e4e4e4" : "none")};
+  background-color: ${(props: any) => (props.two ? "#e4e4e4" : "none")};
 `;
 
 export const Sidebar_Title3 = styled.div`
@@ -60,7 +60,7 @@ export const Sidebar_Title3 = styled.div`
   :hover {
     background-color: #d9d9d9;
   }
-  background-color: ${(props) => (props.three ? "#e4e4e4" : "none")};
+  background-color: ${(props: any) => (props.three ? "#e4e4e4" : "none")};
 `;
 
 export const Sidebar_Title4 = styled.div`
@@ -74,7 +74,7 @@ export const Sidebar_Title4 = styled.div`
   :hover {
     background-color: #d9d9d9;
   }
-  background-color: ${(props) => (props.four ? "#e4e4e4" : "none")};
+  background-color: ${(props: any) => (props.four ? "#e4e4e4" : "none")};
 `;
 
 export const Sidebar_Title5 = styled.div`
@@ -88,7 +88,7 @@ export const Sidebar_Title5 = styled.div`
   :hover {
     background-color: #d9d9d9;
   }
-  background-color: ${(props) => (props.five ? "#e4e4e4" : "none")};
+  background-color: ${(props: any) => (props.five ? "#e4e4e4" : "none")};
 `;
 
 export const MenuTitle = styled.div`

@@ -1,5 +1,7 @@
 import { useState } from "react";
+// @ts-ignore
 import Slide from "react-reveal/Slide";
+// @ts-ignore
 import Fade from "react-reveal/Fade";
 // import { Document, Page, pdfjs } from "react-pdf";
 import "slick-carousel/slick/slick.css";
@@ -91,18 +93,23 @@ export default function AboutPage() {
         <Fade>
           <MenuTitle>About</MenuTitle>
           <SideBar>
+            {/* @ts-ignore */}
             <Sidebar_Title1 onClick={onClickOne} one={aboutOne}>
               소통하는 개발자입니다.
             </Sidebar_Title1>
+            {/* @ts-ignore */}
             <Sidebar_Title2 onClick={onClickTwo} two={aboutTwo}>
               유저친화적인 경험을 선사하고 싶습니다.
-            </Sidebar_Title2>
+            </Sidebar_Title2>{" "}
+            {/* @ts-ignore */}
             <Sidebar_Title3 onClick={onClickThree} three={aboutThree}>
               현재 상태에 만족하지 않습니다.
-            </Sidebar_Title3>
+            </Sidebar_Title3>{" "}
+            {/* @ts-ignore */}
             <Sidebar_Title4 onClick={onClickFour} four={aboutFour}>
               문제에 직면해도 맞서는 개발자입니다.{" "}
-            </Sidebar_Title4>
+            </Sidebar_Title4>{" "}
+            {/* @ts-ignore */}
             <Sidebar_Title5 onClick={onClickFive} five={aboutFive}>
               저는 이러한 성장을 하고 싶습니다.
             </Sidebar_Title5>

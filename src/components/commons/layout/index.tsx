@@ -9,10 +9,9 @@ const Body = styled.div`
 
 const Wrapper = styled.div``;
 
-export default function Layout(props) {
+export default function Layout(props: any) {
   const router = useRouter();
   const currentUrl = router.asPath;
-  console.log(currentUrl);
   return (
     <Wrapper>
       {currentUrl === "/" ||

@@ -95,7 +95,7 @@ export default function Navigation2() {
     router.push("/");
   };
 
-  const onClickMenu = (e) => {
+  const onClickMenu = (e: any) => {
     const id = e.target.id;
     if (id === "Skills & Info") {
       router.push("/Joonyoung/Skills");

@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+// @ts-ignore
 import Fade from "react-reveal/Fade";
 
 import {
@@ -61,6 +62,7 @@ export default function Home() {
 
   const scrollFunction = () => {
     if (scroll > 0 && scroll < 833) {
+      // @ts-ignore
       wheel.current.scrollIntoView({ behavior: "smooth" });
     } else {
       return;
@@ -324,8 +326,7 @@ export default function Home() {
               <Review_Content_Wrapper>
                 <Review_Tile>🎙 커뮤니케이션 평가 </Review_Tile>
                 <Review_Content>
-                  준영님과의 커뮤니케이션은 저에겐 정말 즐거운 시간이었습니다
-                  제가 문제가 발생했을때 적극적으로 도와주시고 준영님이
+                  제가 문제가 발생했을때 적극적으로 도와주시고, 준영님이
                   창의적으로 작성하신 코드를 보며 같이 얘기나누는 시간이
                   저에게는 굉장한 발전의 시간이었다고 생각합니다. 커뮤니케이션이
                   활발하다보니 너무 즐거운 한주를 보낸것 같아 준영님께 감사한
@@ -335,17 +336,15 @@ export default function Home() {
                 <Review_Content>
                   코드를 굉장히 창의적으로 작성하시고 문제가 생겼을 때
                   적극적으로 문제를 해결하시려 하시며 pf의 문제까지 해결을 위해
-                  노력하시는 모습이 너무 좋았습니다 게시물 번호 부여하는 로직
-                  작성했던 시간은 정말 너무 즐거웠던 경험입니다ㅎㅎ 저와같이
-                  과제도 아닌것을 구현했을 때 정말 즐거웠고 해결했을 때 너무
-                  뿌듯했습니다 다 준영님 덕분이라고 생각합니다!!
+                  노력하시는 모습이 너무 좋았습니다. 저와같이 과제도 아닌것을
+                  구현했을 때 정말 즐거웠고 해결했을 때 너무 뿌듯했습니다 다
+                  준영님 덕분이라고 생각합니다!!
                 </Review_Content>
                 <Review_Tile>🤔 개선하면 좋을 부분 </Review_Tile>
                 <Review_Content>
-                  사실 개선할 부분은 없다고 생각합니다 지금도 충분히 노력하고
-                  계시고 창의적이고 적극적으로 코딩에 임하시고 계셔서 지금처럼
-                  쭈욱하신다면 정말 좋은 개발자가 되실거라고 생각합니다.
-                  한주동안 감사했어요ㅎㅎ
+                  지금도 충분히 노력하고 계시고 창의적이고 적극적으로 코딩에
+                  임하시고 계셔서 지금처럼 쭈욱하신다면 정말 좋은 개발자가
+                  되실거라고 생각합니다. 한주동안 감사했어요ㅎㅎ
                 </Review_Content>
               </Review_Content_Wrapper>
             </Box5_Review>

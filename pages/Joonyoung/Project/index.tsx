@@ -14,11 +14,13 @@ import {
   Title,
   Wrapper,
 } from "../../../src/components/units/Project.styles";
+// @ts-ignore
 import Flip from "react-reveal/Flip";
+// @ts-ignore
 import Fade from "react-reveal/Fade";
 
 export default function ProjectPage() {
-  const onClickLink = (e) => {
+  const onClickLink = (e: any) => {
     window.open(e.target.id);
   };
   return (
