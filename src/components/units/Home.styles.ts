@@ -18,7 +18,6 @@ export const Wrapper = styled.div`
 export const Box1 = styled.section`
   display: flex;
   flex-direction: column;
-  /* padding-top: 250px; */
   justify-content: center;
   background: url("/images/rending/rending1.jpg") fixed;
   background-size: cover;
@@ -29,20 +28,20 @@ export const Box1 = styled.section`
 export const HelloLottie = styled.iframe`
   border: none;
   pointer-events: none;
-  height: 200px;
-  width: 500px;
+  height: 150px;
+  width: 300px;
 `;
 
 export const Box1_Btns = styled.div`
-  margin-top: 50px;
   display: flex;
   justify-content: space-around;
 `;
 
 export const Box1_Btn_Github = styled.img`
   margin-right: 50px;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
+  margin-top: 2px;
   cursor: pointer;
 `;
 
@@ -77,7 +76,7 @@ export const Box1_Content = styled.p`
 export const Box1_SubContent = styled.p`
   font-size: 15px;
   font-weight: 200;
-  margin-top: 20px;
+  margin-top: 40px;
 `;
 
 export const Box2 = styled.section`
@@ -207,6 +206,7 @@ export const Box5_Review = styled.div`
   align-items: center;
   padding: 20px;
   flex: 0 0 auto;
+  border: 2px solid #e0e0e0;
 `;
 
 export const Box5_Slide = styled(Zoom)``;

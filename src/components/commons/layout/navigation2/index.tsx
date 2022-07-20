@@ -2,8 +2,12 @@ import { from } from "@apollo/client";
 import { keyframes } from "@emotion/react";
 import styled from "@emotion/styled";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import { useRecoilState } from "recoil";
+import { darkMode } from "../../../../commons/Recoil/Recoil";
 
 const Wrapper = styled.div`
+  transition: 0.3s ease-in-out;
   width: 100%;
   height: 70px;
   display: flex;
@@ -12,6 +16,8 @@ const Wrapper = styled.div`
   position: fixed;
   backdrop-filter: blur(100px);
   z-index: 1;
+  background-color: ${(props: any) =>
+    props.styleValue === false ? "none" : "white"};
 `;
 
 const MenuWrapper = styled.div`
@@ -86,7 +92,7 @@ const ElWrapper = styled.div`
   } */
 `;
 
-export default function Navigation2() {
+export default function Navigation2(props: any) {
   const router = useRouter();
   const menuArray = ["Skills & Info", "About", "Project", "Career & Education"];
 
@@ -107,8 +113,12 @@ export default function Navigation2() {
       router.push("/Joonyoung/Career&Education");
     }
   };
+
+  const [darkValid, setDark1Valid] = useRecoilState(darkMode);
+
   return (
-    <Wrapper>
+    // @ts-ignore
+    <Wrapper styleValue={props.styleValue}>
       <MenuWrapper>
         <ElWrapper>
           <Title onClick={onClickMain}>Joonyoung{"'"}s</Title>

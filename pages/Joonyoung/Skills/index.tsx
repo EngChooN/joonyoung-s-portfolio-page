@@ -30,6 +30,9 @@ const Content_Wrapper = styled.div`
   height: 500px;
   padding: 30px;
   background-color: white;
+  border-right: 2px solid #e0e0e0;
+  border-left: 2px solid #e0e0e0;
+  border-bottom: 2px solid #e0e0e0;
 `;
 
 const SkillsTap1 = styled.section`
@@ -43,6 +46,8 @@ const SkillsTap1 = styled.section`
   background-color: ${(props: any) => (props.one ? "white" : "#dddddd")};
   font-size: 19px;
   font-weight: 200;
+  border-top: 2px solid #e0e0e0;
+  border-left: 2px solid #e0e0e0;
 `;
 
 const SkillsTap2 = styled.section`
@@ -56,6 +61,8 @@ const SkillsTap2 = styled.section`
   background-color: ${(props: any) => (props.two ? "white" : "#dddddd")};
   font-size: 19px;
   font-weight: 200;
+  border-top: 2px solid #e0e0e0;
+  border-left: 2px solid #e0e0e0;
 `;
 
 const SkillsTap3 = styled.section`
@@ -69,6 +76,8 @@ const SkillsTap3 = styled.section`
   background-color: ${(props: any) => (props.three ? "white" : "#dddddd")};
   font-size: 19px;
   font-weight: 200;
+  border-top: 2px solid #e0e0e0;
+  border-left: 2px solid #e0e0e0;
 `;
 
 const SkillsUl = styled.ul``;
@@ -94,6 +103,7 @@ const Info = styled.section`
   flex-direction: column;
   align-items: center;
   background-color: white;
+  border: 2px solid #e0e0e0;
 `;
 
 const Profile = styled.img`

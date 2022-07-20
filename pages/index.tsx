@@ -10,7 +10,6 @@ import {
   Box1_Btn_Velog,
   Box1_Content,
   Box1_SubContent,
-  Box1_Zoom,
   Box1_Zoom_Wrapper,
   Box2,
   Box2_Content,
@@ -46,7 +45,6 @@ import {
   Wrapper,
 } from "../src/components/units/Home.styles";
 import { Tooltip } from "antd";
-import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
   // useEffect(() => {
@@ -57,21 +55,6 @@ export default function Home() {
   //   };
   //   imgfunction();
   // }, []);
-  const wheel = useRef(null);
-  const [scroll, setScroll] = useState(0);
-
-  const scrollFunction = () => {
-    if (scroll > 0 && scroll < 833) {
-      // @ts-ignore
-      wheel.current.scrollIntoView({ behavior: "smooth" });
-    } else {
-      return;
-    }
-  };
-
-  useEffect(() => {
-    scrollFunction();
-  }, [scroll]);
 
   const onClickGithub = () => {
     window.open("https://github.com/EngChooN");
@@ -81,22 +64,16 @@ export default function Home() {
     window.open("https://velog.io/@aimzero9303");
   };
 
-  const onScrollFunction = () => {
-    // setScroll(window.scrollY);
-  };
-
   return (
-    <Wrapper onWheel={onScrollFunction}>
+    <Wrapper>
       <Box1>
         <Fade>
           <Box1_Zoom_Wrapper>
             <HelloLottie src="https://embed.lottiefiles.com/animation/76787"></HelloLottie>
-            {/* <Box1_Zoom> */}
             <Box1_Content>
-               사용자의 입장에서 코드를 작성하는 프론트엔드 개발자 조준영
+               사용자의 입장에서 코드를 작성하는 주니어 프론트엔드 개발자 조준영
               입니다.
             </Box1_Content>
-            {/* </Box1_Zoom> */}
             <Box1_Btns>
               <Tooltip placement="bottom" title={"Visit GitHub"}>
                 <Box1_Btn_Github
@@ -106,7 +83,7 @@ export default function Home() {
               </Tooltip>
               <Tooltip placement="bottom" title={"Visit Velog"}>
                 <Box1_Btn_Velog
-                  src="https://cdn-icons.flaticon.com/png/512/3669/premium/3669981.png?token=exp=1657452407~hmac=71b8479dbe68314d5d35e977743f13ab"
+                  src="https://img.icons8.com/ios-filled/100/000000/blogger.png"
                   onClick={onClickVelog}
                 />
               </Tooltip>
@@ -118,7 +95,7 @@ export default function Home() {
           </Box1_Zoom_Wrapper>
         </Fade>
       </Box1>
-      <Box2 ref={wheel}>
+      <Box2>
         <Box2_Content_Wrapper>
           <Box2_Slide bottom>
             <Box2_Content>

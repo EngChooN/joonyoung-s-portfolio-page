@@ -16,7 +16,7 @@ export const Left_Project_Wrapper = styled.section`
   border-radius: 30px;
   margin-bottom: 120px;
   margin-left: 500px;
-  border: 1px solid #cacaca;
+  border: 2px solid #e0e0e0;
 `;
 
 export const Right_Project_Wrapper = styled.section`
@@ -27,7 +27,7 @@ export const Right_Project_Wrapper = styled.section`
   border-radius: 30px;
   margin-bottom: 120px;
   margin-right: 500px;
-  border: 1px solid #cacaca;
+  border: 2px solid #e0e0e0;
   display: flex;
 `;
 
@@ -47,7 +47,7 @@ export const Left_Img = styled.img`
   width: 300px;
   height: 250px;
   border-radius: 20px;
-  border: 1px solid #cacaca;
+  border: 2px solid #e0e0e0;
   /* background-color: black; */
   margin-right: 30px;
   float: right;
@@ -62,7 +62,7 @@ export const Right_Img = styled.img`
   /* background-color: black; */
   margin-left: 30px;
   margin-top: 25px;
-  border: 1px solid #cacaca;
+  border: 2px solid #e0e0e0;
 `;
 
 export const Left_Content_Wrapper = styled.div`
@@ -101,14 +101,14 @@ export const Link = styled.p`
 `;
 
 export const Right_Date = styled.h1`
-  font-size: 40px;
+  font-size: 35px;
   margin-left: 300px;
   margin-bottom: 30px;
   font-weight: 200;
 `;
 
 export const Left_Date = styled.h1`
-  font-size: 40px;
+  font-size: 35px;
   margin-right: 300px;
   margin-bottom: 30px;
   font-weight: 200;
