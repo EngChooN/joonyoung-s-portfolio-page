@@ -13,12 +13,17 @@ import { Document, Page, pdfjs } from "react-pdf";
 import Fade from "react-reveal/Fade";
 // @ts-ignore
 import Slide from "react-reveal/Slide";
+import { prefix } from "../../../config/config";
 
 export default function CareerPage() {
   pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
   return (
-    <Wrapper>
+    <Wrapper
+      style={{
+        backgroundImage: `url(${prefix}/images/rending/rending1.jpg)`,
+      }}
+    >
       <Fade>
         <ScrollBox>
           <Title>Career & Education</Title>
@@ -29,7 +34,7 @@ export default function CareerPage() {
           </Content>
           <br />
           <Slide right>
-            <Document file={"/files/codeCamp.pdf"}>
+            <Document file={`${prefix}/files/codeCamp.pdf`}>
               <Page height={400} pageNumber={1} />
             </Document>
           </Slide>
@@ -53,19 +58,19 @@ export default function CareerPage() {
           </Content>
           <br />
           <Slide right>
-            <Document file={"/files/kakao.pdf"}>
+            <Document file={`${prefix}/files/kakao.pdf`}>
               <Page height={350} pageNumber={1} />
             </Document>
           </Slide>
           <br />
           <Slide right>
-            <Document file={"/files/javascript.pdf"}>
+            <Document file={`${prefix}/files/javascript.pdf`}>
               <Page height={350} pageNumber={1} />
             </Document>
           </Slide>
           <br />
           <List_Wrapper>
-            <List>Javasciprt 기반 프론트엔드 과정 학습</List>
+            <List>Javascript 기반 프론트엔드 과정 학습</List>
             <List>
               변수(Variables), 함수(Functions), 데이터 타입(Data Types), 배열과
               객체(Arrays, Objects), DOM, 이벤트(Events), 조건문과 반복문(if /

@@ -4,11 +4,14 @@ import TopBtn from "../../units/TopBtn";
 import Navigation2 from "./navigation2";
 
 const Body = styled.div`
+  width: 100%;
   height: 100%;
   margin-top: 465px;
 `;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  width: 100%;
+`;
 
 export default function Layout(props: any) {
   const [scroll, setScroll] = useState(0);

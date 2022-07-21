@@ -16,12 +16,20 @@ const Wrapper = styled.div`
   /* display: ${(props: any) => (props.topValid === true ? "" : "none")}; */
   cursor: pointer;
   z-index: 3;
+  @media (max-width: 767px) {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+  }
 `;
 
 const Title = styled.div`
   color: white;
   font-size: 20px;
   font-weight: 200;
+  @media (max-width: 767px) {
+    font-size: 13px;
+  }
 `;
 
 export default function TopBtn(props: any) {

@@ -45,6 +45,7 @@ import {
   Wrapper,
 } from "../src/components/units/Home.styles";
 import { Tooltip } from "antd";
+import { prefix } from "../config/config";
 
 export default function Home() {
   // useEffect(() => {
@@ -66,7 +67,11 @@ export default function Home() {
 
   return (
     <Wrapper>
-      <Box1>
+      <Box1
+        style={{
+          backgroundImage: `url(${prefix}/images/rending/rending1.jpg)`,
+        }}
+      >
         <Fade>
           <Box1_Zoom_Wrapper>
             <HelloLottie src="https://embed.lottiefiles.com/animation/76787"></HelloLottie>

@@ -18,6 +18,9 @@ const Wrapper = styled.div`
   z-index: 1;
   background-color: ${(props: any) =>
     props.styleValue === false ? "none" : "white"};
+  @media (max-width: 767px) {
+    height: 50px;
+  }
 `;
 
 const MenuWrapper = styled.div`
@@ -55,12 +58,18 @@ const Title = styled.div`
   font-size: 25px;
   font-weight: 250;
   cursor: pointer;
+  @media (max-width: 767px) {
+    font-size: 13px;
+  }
 `;
 
 const Menu = styled.div`
   font-size: 17px;
   font-weight: 200;
   cursor: pointer;
+  @media (max-width: 767px) {
+    font-size: 10px;
+  }
 `;
 
 const UnderLineWrapper = styled.div`

@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 // @ts-ignore
 import Fade from "react-reveal/Fade";
 import { useState } from "react";
+import { prefix } from "../../../config/config";
 
 const Wrapper = styled.div`
   // 필수 세팅
@@ -10,15 +11,24 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
-  background: url("/images/rending/rending1.jpg") fixed;
+  height: 100%;
+  /* background: url("/images/rending/rending1.jpg") fixed; */
   background-size: cover;
+  background-attachment: fixed;
   padding-top: 50px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 `;
 
 const Skills = styled.div`
   display: flex;
   flex-direction: column;
+  @media (max-width: 767px) {
+    margin-top: 50px;
+    width: 300px;
+    height: 400px;
+  }
 `;
 
 const Tap_Wrapper = styled.div`
@@ -33,6 +43,12 @@ const Content_Wrapper = styled.div`
   border-right: 2px solid #e0e0e0;
   border-left: 2px solid #e0e0e0;
   border-bottom: 2px solid #e0e0e0;
+  @media (max-width: 767px) {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const SkillsTap1 = styled.section`
@@ -48,6 +64,12 @@ const SkillsTap1 = styled.section`
   font-weight: 200;
   border-top: 2px solid #e0e0e0;
   border-left: 2px solid #e0e0e0;
+  border-right: 2px solid #e0e0e0;
+  @media (max-width: 767px) {
+    font-size: 13px;
+    height: 40px;
+    border: none;
+  }
 `;
 
 const SkillsTap2 = styled.section`
@@ -63,6 +85,12 @@ const SkillsTap2 = styled.section`
   font-weight: 200;
   border-top: 2px solid #e0e0e0;
   border-left: 2px solid #e0e0e0;
+  border-right: 2px solid #e0e0e0;
+  @media (max-width: 767px) {
+    font-size: 13px;
+    height: 40px;
+    border: none;
+  }
 `;
 
 const SkillsTap3 = styled.section`
@@ -78,6 +106,12 @@ const SkillsTap3 = styled.section`
   font-weight: 200;
   border-top: 2px solid #e0e0e0;
   border-left: 2px solid #e0e0e0;
+  border-right: 2px solid #e0e0e0;
+  @media (max-width: 767px) {
+    font-size: 13px;
+    height: 40px;
+    border: none;
+  }
 `;
 
 const SkillsUl = styled.ul``;
@@ -86,6 +120,10 @@ const SkillsLi = styled.li`
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: 300;
+  @media (max-width: 767px) {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
 `;
 
 const SubTitle = styled.h3`
@@ -93,6 +131,10 @@ const SubTitle = styled.h3`
   font-weight: 400;
   margin-bottom: 40px;
   margin-top: 20px;
+  @media (max-width: 767px) {
+    margin-top: 0;
+    font-size: 12px;
+  }
 `;
 
 const Info = styled.section`
@@ -104,6 +146,14 @@ const Info = styled.section`
   align-items: center;
   background-color: white;
   border: 2px solid #e0e0e0;
+  @media (max-width: 767px) {
+    width: 300px;
+    margin-top: 40px;
+    margin-left: 0px;
+    height: 400px;
+    margin-bottom: 100px;
+    border: none;
+  }
 `;
 
 const Profile = styled.img`
@@ -127,6 +177,9 @@ const Tag = styled.span`
   padding-right: 5px;
   border-radius: 5px;
   margin-bottom: 10px;
+  @media (max-width: 767px) {
+    font-size: 10px;
+  }
 `;
 
 const Contact = styled.div`
@@ -134,10 +187,13 @@ const Contact = styled.div`
   width: 100%;
   height: 100%;
   margin-top: 15px;
+  @media (max-width: 767px) {
+    font-size: 11px;
+  }
 `;
 
 const Contact_Content = styled.p`
-  margin-left: 45px;
+  margin-left: 15px;
 `;
 
 export default function SkillsPage(props: any) {
@@ -166,7 +222,11 @@ export default function SkillsPage(props: any) {
   const tags = ["#역지사지", "#집요함", "#조금씩 전진", "#실력은 고통의 총합"];
 
   return (
-    <Wrapper>
+    <Wrapper
+      style={{
+        backgroundImage: `url(${prefix}/images/rending/rending1.jpg)`,
+      }}
+    >
       <Fade>
         <Skills>
           <Tap_Wrapper>
@@ -237,7 +297,7 @@ export default function SkillsPage(props: any) {
           </Content_Wrapper>
         </Skills>
         <Info>
-          <Profile src="/images/rending/profile.JPG" />
+          <Profile src={`${prefix}/images/rending/profile.JPG`} />
           <Tags>
             {tags.map((tag, index) => (
               <Tag key={index}>{tag}</Tag>

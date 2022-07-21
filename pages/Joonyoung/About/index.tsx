@@ -26,6 +26,7 @@ import {
   Title,
   Wrapper,
 } from "../../../src/components/units/About.styles";
+import { prefix } from "../../../config/config";
 
 export default function AboutPage() {
   // workerSrc 정의 하지 않으면 pdf 보여지지 않습니다.
@@ -88,7 +89,11 @@ export default function AboutPage() {
   };
 
   return (
-    <Wrapper>
+    <Wrapper
+      style={{
+        backgroundImage: `url(${prefix}/images/rending/rending1.jpg)`,
+      }}
+    >
       <SideBar_Wrapper>
         <Fade>
           <MenuTitle>About</MenuTitle>

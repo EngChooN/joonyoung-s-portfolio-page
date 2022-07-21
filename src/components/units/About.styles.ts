@@ -8,7 +8,8 @@ export const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
-  background: url("/images/rending/rending1.jpg") fixed;
+  /* background: url("/images/rending/rending1.jpg") fixed; */
+  background-attachment: fixed;
   background-size: cover;
   display: flex;
 `;

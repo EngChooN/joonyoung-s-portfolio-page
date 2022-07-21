@@ -18,6 +18,7 @@ import {
 import Flip from "react-reveal/Flip";
 // @ts-ignore
 import Fade from "react-reveal/Fade";
+import { prefix } from "../../../config/config";
 
 export default function ProjectPage() {
   const onClickLink = (e: any) => {
@@ -25,13 +26,17 @@ export default function ProjectPage() {
   };
   return (
     <Wrapper>
-      <ScrollBox>
+      <ScrollBox
+        style={{
+          backgroundImage: `url(${prefix}/images/rending/rending1.jpg)`,
+        }}
+      >
         <Fade>
           <Right_Date>July 03, 2021 ~ July 21, 2021</Right_Date>
         </Fade>
         <Flip left>
           <Left_Project_Wrapper>
-            <Left_Img src={"/images/project/langB.gif"} />
+            <Left_Img src={`${prefix}/images/project/langB.gif`} />
             <Left_Content_Wrapper>
               <Title>📗 LangB 팀 프로젝트</Title>
               <Link
@@ -65,7 +70,7 @@ export default function ProjectPage() {
         </Fade>
         <Flip right>
           <Right_Project_Wrapper>
-            <Right_Img src={"/images/project/codeCamp.png"} />
+            <Right_Img src={`${prefix}/images/project/codeCamp.png`} />
             <Right_Content_Wrapper>
               <Title>📗 코드캠프 개인 프로젝트</Title>
               <Link
@@ -98,7 +103,7 @@ export default function ProjectPage() {
         </Fade>
         <Flip left>
           <Left_Project_Wrapper>
-            <Left_Img src={"/images/project/cyWorld.png"} />
+            <Left_Img src={`${prefix}/images/project/cyWorld.png`} />
             <Left_Content_Wrapper>
               <Title>📗 싸이월드 클론 코딩</Title>
               <Link
@@ -129,7 +134,7 @@ export default function ProjectPage() {
         </Fade>
         <Flip right>
           <Right_Project_Wrapper>
-            <Right_Img src={"/images/project/toDoList.png"} />
+            <Right_Img src={`${prefix}/images/project/toDoList.png`} />
             <Right_Content_Wrapper>
               <Title>📗 Javascript로 To-Do-list 만들기</Title>
               <Link
@@ -160,7 +165,7 @@ export default function ProjectPage() {
         </Fade>
         <Flip left>
           <Left_Project_Wrapper>
-            <Left_Img src={"/images/project/kakaoClone.png"} />
+            <Left_Img src={`${prefix}/images/project/kakaoClone.png`} />
             <Left_Content_Wrapper>
               <Title>📗 카카오톡 클론 코딩</Title>
               <Link

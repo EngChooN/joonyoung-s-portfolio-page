@@ -2,7 +2,8 @@ import styled from "@emotion/styled";
 
 export const Wrapper = styled.div`
   margin-top: -465px;
-  background: url("/images/rending/rending1.jpg") fixed;
+  /* background: url("/images/rending/rending1.jpg") fixed; */
+  background-attachment: fixed;
   background-size: cover;
 `;
 

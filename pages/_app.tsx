@@ -7,14 +7,20 @@ import { globalStyles } from "../src/commons/styles/globalStyles";
 
 import { RecoilRoot } from "recoil";
 
+import { PortfolioProvider } from "../src/components/commons/context/context";
+import { prefix } from "../config/config";
+
 function MyApp({ Component, pageProps }: any) {
   return (
-    <RecoilRoot>
-      <Global styles={globalStyles} />
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </RecoilRoot>
+    // @ts-ignore
+    <PortfolioProvider value={{ prefix }}>
+      <RecoilRoot>
+        <Global styles={globalStyles} />
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </RecoilRoot>
+    </PortfolioProvider>
   );
 }
 

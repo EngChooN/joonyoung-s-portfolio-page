@@ -3,9 +3,9 @@ import styled from "@emotion/styled";
 export const Wrapper = styled.div`
   margin-top: -465px;
   height: 100vh;
-  background: url("/images/rending/rending1.jpg") fixed;
-  background-size: cover;
-  overflow: scroll;
+  /* background: url("/images/rending/rending1.jpg") fixed; */
+  /* background-attachment: fixed;
+  background-size: cover; */
 `;
 
 export const Left_Project_Wrapper = styled.section`
@@ -32,6 +32,7 @@ export const Right_Project_Wrapper = styled.section`
 `;
 
 export const ScrollBox = styled.div`
+  padding-top: 150px;
   width: 100%;
   overflow: scroll;
   display: flex;
@@ -40,6 +41,8 @@ export const ScrollBox = styled.div`
   :first-child {
     margin-top: 150px;
   }
+  background-attachment: fixed;
+  background-size: cover;
 `;
 
 export const Left_Img = styled.img`
