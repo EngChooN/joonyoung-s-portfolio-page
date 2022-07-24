@@ -12,7 +12,7 @@ const Wrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 100vh;
-  /* background: url("/images/rending/rending1.jpg") fixed; */
+  /* background: url("/images/rending/rending1.jpg") fixed;. */
   background-size: cover;
   background-attachment: fixed;
   padding-top: 50px;
