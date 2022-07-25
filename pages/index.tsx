@@ -201,9 +201,9 @@ export default function Home() {
                 <Review_Tile>👍🏻 잘했던 부분</Review_Tile>
                 <Review_Content>
                   자신이 모르는 부분을 정확히 집어내어 질문을 하고 상대방의
-                  질문의 요지를 잘 집어내는 능력이 있습니다 - 또 다른 PF인
-                  문주현님이 첫날부터 학습과정에 어려움이 있었는데 그때 마다
-                  도움을 많이 주는 모습이 인상적이었습니다.
+                  질문의 요지를 잘 집어내는 능력이 있습니다 - 또 다른 PF님이
+                  첫날부터 학습과정에 어려움이 있었는데 그때 마다 도움을 많이
+                  주는 모습이 인상적이었습니다.
                 </Review_Content>
                 <Review_Tile>🤔 개선하면 좋을 부분 </Review_Tile>
                 <Review_Content>
@@ -261,10 +261,10 @@ export default function Home() {
               <Review_Content_Wrapper>
                 <Review_Tile>🎙 커뮤니케이션 평가 </Review_Tile>
                 <Review_Content>
-                  커뮤니케이션에 있어 털털하고 적극적입니다. 처음엔 살짝
-                  부담스러운 감이 있었지만 그 성향 덕분에 오히려 금방 편하고
-                  여러 문제를 도움 받을 수 있었던 것 같습니다. 다수와 대화를
-                  하는 상황 에서는 여럿과 두루 잘 어울리는 점도 인상 깊었습니다.
+                  커뮤니케이션에 있어 털털하고 적극적입니다. 그 성향 덕분에
+                  오히려 금방 편하고 여러 문제를 도움 받을 수 있었던 것
+                  같습니다. 다수와 대화를 하는 상황 에서는 여럿과 두루 잘
+                  어울리는 점도 인상 깊었습니다.
                 </Review_Content>
                 <Review_Tile>👍🏻 잘했던 부분</Review_Tile>
                 <Review_Content>

@@ -5,13 +5,16 @@ import "slick-carousel/slick/slick-theme.css";
 
 export const Wrapper = styled.div`
   margin-top: -465px;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   /* background: url("/images/rending/rending1.jpg") fixed; */
   background-attachment: fixed;
   background-size: cover;
   display: flex;
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
 `;
 
 export const SideBar = styled.div`
@@ -20,6 +23,9 @@ export const SideBar = styled.div`
   width: 380px;
   display: flex;
   flex-direction: column;
+  @media (max-width: 767px) {
+    height: 90vh;
+  }
 `;
 
 export const Sidebar_Title1 = styled.div`
@@ -34,6 +40,9 @@ export const Sidebar_Title1 = styled.div`
     background-color: #d9d9d9;
   }
   background-color: ${(props: any) => (props.one ? "#e4e4e4" : "none")};
+  @media (max-width: 767px) {
+    font-size: 17px;
+  }
 `;
 
 export const Sidebar_Title2 = styled.div`
@@ -48,6 +57,9 @@ export const Sidebar_Title2 = styled.div`
     background-color: #d9d9d9;
   }
   background-color: ${(props: any) => (props.two ? "#e4e4e4" : "none")};
+  @media (max-width: 767px) {
+    font-size: 17px;
+  }
 `;
 
 export const Sidebar_Title3 = styled.div`
@@ -62,6 +74,9 @@ export const Sidebar_Title3 = styled.div`
     background-color: #d9d9d9;
   }
   background-color: ${(props: any) => (props.three ? "#e4e4e4" : "none")};
+  @media (max-width: 767px) {
+    font-size: 17px;
+  }
 `;
 
 export const Sidebar_Title4 = styled.div`
@@ -76,6 +91,9 @@ export const Sidebar_Title4 = styled.div`
     background-color: #d9d9d9;
   }
   background-color: ${(props: any) => (props.four ? "#e4e4e4" : "none")};
+  @media (max-width: 767px) {
+    font-size: 17px;
+  }
 `;
 
 export const Sidebar_Title5 = styled.div`
@@ -90,12 +108,18 @@ export const Sidebar_Title5 = styled.div`
     background-color: #d9d9d9;
   }
   background-color: ${(props: any) => (props.five ? "#e4e4e4" : "none")};
+  @media (max-width: 767px) {
+    font-size: 17px;
+  }
 `;
 
 export const MenuTitle = styled.div`
   padding-top: 130px;
   font-size: 40px;
   margin-left: 30px;
+  @media (max-width: 767px) {
+    font-size: 28px;
+  }
 `;
 
 export const SideBar_Wrapper = styled.section`
@@ -105,11 +129,17 @@ export const SideBar_Wrapper = styled.section`
 export const NewsWrapper = styled.section`
   width: 100%;
   padding-top: 100px;
+  @media (max-width: 767px) {
+    padding-top: 0px;
+  }
 `;
 
 export const Title = styled.h1`
   font-size: 40px;
   padding-left: 20px;
+  @media (max-width: 767px) {
+    font-size: 25px;
+  }
 `;
 
 export const Content = styled.p`
@@ -120,6 +150,9 @@ export const Content = styled.p`
   font-size: 19px;
   font-weight: 200;
   border-radius: 15px;
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
 `;
 
 export const News = styled.article`
@@ -139,6 +172,10 @@ export const Slider1 = styled(Slider)`
   width: 750px;
   height: 80px;
   display: flex;
+  @media (max-width: 767px) {
+    width: 100%;
+    height: 120px;
+  }
 `;
 
 export const SliderChild = styled(Slider)`
@@ -152,9 +189,18 @@ export const SliderChild = styled(Slider)`
   border-radius: 15px;
   margin-left: 25px;
   background-color: #e0e0e0;
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 10px;
+    margin-left: 0;
+    height: 120px;
+  }
 `;
 
 export const Review = styled.div`
   font-size: 15px;
   font-weight: 350;
+  @media (max-width: 767px) {
+    font-size: 12px;
+  }
 `;
