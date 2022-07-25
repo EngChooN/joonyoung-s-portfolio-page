@@ -148,7 +148,7 @@ export const Link = styled.p`
   margin-bottom: 20px;
   text-decoration: underline;
   @media (max-width: 767px) {
-    font-size: 11px;
+    font-size: 10px;
   }
 `;
 
